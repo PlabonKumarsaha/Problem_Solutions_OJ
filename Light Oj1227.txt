@@ -1,0 +1,33 @@
+#include<iostream>
+#include<cstdio>
+#include<algorithm>
+using namespace std;
+int arr[1000];
+int main()
+{
+
+int t;
+int n,p,q;
+cin>>t;
+for(int i=1;i<=t;i++)
+{
+    int k;
+    int num =0;
+ cin>>n>>p>>q;
+   for(int j=0;j<n;j++)
+        cin>>arr[j];
+
+    for(k =0;k<n;k++)
+           {
+               num = num + arr[k];
+        if(k>=p || num >q)
+        {
+           break;
+        }
+        }
+  cout<<"Case "<<i<<": "<<k<<endl;
+          // Case 1: 2
+
+}
+
+}
