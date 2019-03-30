@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int ca,n,c;
+    int p=0;
+    string arr;
+
+    c=0;
+   cin>>ca;
+   while(ca--)
+   {
+       cin>>n;
+
+     cin>>arr;
+    c=0;
+
+    for(int k=0;k<arr.size();)
+    {
+        if(arr[k]=='#')
+        {
+            k++;}
+
+        else{
+
+            c++;
+            k=k+3;
+        }
+
+    }
+    cout<<"Case "<<++p<<" : "<<c<<"\n";
+
+   }
+
+}
