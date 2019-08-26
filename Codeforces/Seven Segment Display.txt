@@ -1,0 +1,19 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+
+
+long test;
+std::cin>>test;
+for(long i = 0;i<test;i++){
+    long n; std::cin >> n;
+    string s("");
+    for(long p = 0; p < n / 2; p++){s += '1';}
+    if(n & 1){s[0] = '7';}
+    std::cout << s << std::endl;
+    s="";
+}
+
+    return 0;
+}
+//773C CF
