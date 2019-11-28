@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+int arr[100];
+int main()
+{
+    int n;
+    cin>>n;
+    for(int i = 1;i<=n;i++)
+    {
+        cin>>arr[i];
+    }
+    int evenCOunt = 0,oddCount =0;
+    int lastEven = 0,lastODD = 0;
+    for(int i =1;i<=n;i++)
+    {
+        if(arr[i]%2 == 0) {
+                evenCOunt++;
+                lastEven = i;}
+        else {
+            oddCount++;
+            lastODD = i;
+        }
+
+
+    }
+    if(evenCOunt ==1){cout<<lastEven<<endl;}
+        else if(oddCount == 1){cout<<lastODD<<endl;}
+    return 0;
+}
