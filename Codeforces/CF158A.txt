@@ -1,0 +1,38 @@
+#include <iostream>
+#include <string.h>
+#include <algorithm>
+ 
+ 
+ 
+using namespace std;
+int arr[10000];
+int co;
+int main()
+{
+    int kPlace = 0;
+   int n,k;
+   cin>>n>>k;
+   arr[n+1];
+ 
+   for(int i = 1 ;i<n+1;i++)
+   {
+       cin>>arr[i];
+   }
+  // sort(arr,arr+n);
+   kPlace = arr[k];
+ 
+   for(int i = 1 ;i<n+1;i++)
+   {
+       if(arr[i]!=0){
+       if(arr[i]>=kPlace )
+        {
+            co++;
+       }
+       }
+   }
+   cout<<co<<endl;
+ 
+ 
+ 
+    return 0;
+}
