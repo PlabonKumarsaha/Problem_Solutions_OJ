@@ -4,6 +4,6 @@ problems that i tried in online judges like codeforces,SPOJ,hackerearth
 
 
 ## LeetCode 
-* 1 -Two Sum 
-* 7 -Reverse Integer
-* 9 -Palindrome Number 
+* 1 -Two Sum - Accepted
+* 7 -Reverse Integer -Accepted
+* 9 -Palindrome Number - in two ways -> first one is making string reverse,other one is doing the reverse and checking(Accepted)
