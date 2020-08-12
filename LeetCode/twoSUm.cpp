@@ -1,6 +1,5 @@
 class Solution {
-    
-public:
+    public:
     vector<int> twoSum(vector<int>& nums, int target) {
         
       const int size = nums.size();
