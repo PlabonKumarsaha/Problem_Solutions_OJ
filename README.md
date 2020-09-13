@@ -11,3 +11,4 @@ problems that i tried in online judges like codeforces,SPOJ,hackerearth
 * 20 - Valid Parentheses - Accepted
 * 101 - Symmetric Tree
 * 102 - Binary Tree Level Order Traversal
+* 342 -Time limit exceed
