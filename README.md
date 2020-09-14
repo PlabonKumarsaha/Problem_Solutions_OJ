@@ -12,4 +12,4 @@ problems that i tried in online judges like codeforces,SPOJ,hackerearth
 * 101 - Symmetric Tree
 * 102 - Binary Tree Level Order Traversal
 * 342 -Power of four(checking reminder method-log(n),Logarithomic solution(coomplexity-Math.Log function of Java))
-* 520 - still unsoved
+* 520 - Detect Capital(bruitForce,)
