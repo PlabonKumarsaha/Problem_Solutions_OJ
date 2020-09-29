@@ -1,0 +1,13 @@
+https://stackoverflow.com/questions/37649/swapping-column-values-in-mysql
+# Write your MySQL query statement below
+update salary 
+SET  sex = CASE sex
+        WHEN 'm' THEN 'f'
+        ELSE 'm'
+        END;
+
+
+# Write your MySQL query statement below
+# if sex = m then set f or else m
+UPDATE salary
+SET sex = if(sex = 'm', 'f', 'm')
