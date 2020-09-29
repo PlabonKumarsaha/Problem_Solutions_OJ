@@ -17,3 +17,4 @@ problems that i tried in online judges like codeforces,SPOJ,hackerearth
 
 ## LeetCode SQL
 * 595 -Big Countries - where and union operator was used..second apporach - OR operator
+* 627 - Swap salaries - swaping values in a column using SET,CASE and WHEN
