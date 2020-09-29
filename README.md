@@ -14,3 +14,6 @@ problems that i tried in online judges like codeforces,SPOJ,hackerearth
 * 342 -Power of four(checking reminder method-log(n),Logarithomic solution(coomplexity-Math.Log function of Java))
 * 520 - Detect Capital(bruitForce(2m,40% daster),counting uppercase(1ms,99.55% faster))
 * 705 - Hashmap impementation
+
+## LeetCode SQL
+* 595 -Big Countries - where and union operator was used..second apporach - OR operator
