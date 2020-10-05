@@ -1,0 +1,1 @@
+Select  MAX(Salary) AS  SecondHighestSalary from Employee  WHERE Salary<(Select MAX(Salary) from Employee );
