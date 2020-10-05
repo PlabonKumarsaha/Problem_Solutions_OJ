@@ -21,3 +21,4 @@ problems that i tried in online judges like codeforces,SPOJ,hackerearth
 * 1179 - Reformat Department Table
 * 175 -Joining two tables - used Left joining to do it
 * 176 - Second Highest Salary - used subquery to do it
+* 177 - Nth Highest salary - using Limit , Order and OFFSET
