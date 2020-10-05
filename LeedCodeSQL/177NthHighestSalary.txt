@@ -1,0 +1,22 @@
+
+CREATE [AGGREGATE] FUNCTION function_name
+    RETURNS {STRING|INTEGER|REAL|DECIMAL}
+    SONAME shared_library_name
+
+# Limit - sets limit to search results about how many query to actually show
+# offset - selects the amount of row that is mentioned 
+ex : select * from EMP Limit 5 offset 10 # this query will be skipping the first 10 row and show the later 5
+
+alter : select * from EMP LIMIT 2(offset),5(Limit) // skipping 1 and 2 and showing the later 5
+
+
+CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT
+BEGIN
+SET N = N - 1;
+RETURN (
+SELECT DISTINCT Salary
+FROM Employee
+ORDER BY Salary DESC
+LIMIT 1 OFFSET N
+);
+END
