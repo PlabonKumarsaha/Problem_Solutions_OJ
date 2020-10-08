@@ -23,3 +23,4 @@ problems that i tried in online judges like codeforces,SPOJ,hackerearth
 * 175 -Joining two tables - used Left joining to do it
 * 176 - Second Highest Salary - used subquery to do it
 * 177 - Nth Highest salary - using Limit , Order and OFFSET
+* 196 - Delete duplication - https://github.com/PlabonKumarsaha/Problem_Solutions_OJ/blob/master/LeedCodeSQL/196Delete%20Duplicate%20Emails.txt
