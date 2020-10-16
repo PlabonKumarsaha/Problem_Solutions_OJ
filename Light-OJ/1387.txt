@@ -1,0 +1,45 @@
+#include <iostream>
+#include <algorithm>
+#include <string>
+using namespace std;
+int main()
+{
+   int T;
+   int a;
+   int f=0;
+   int sum=0;
+   string st;
+   cin>>T;
+   for(int i=1;i<=T;i++)
+   {
+       cin>>a;
+       sum=0;
+       cout << "Case " << i <<":"<< endl;
+
+       for(int j=0;j<a;j++)
+       {
+
+           cin>>st;
+           if(st=="donate")
+           {
+               cin>>f;
+               sum=f+sum;
+           }
+           else if(st=="report")
+           {
+               cout<<sum<<endl;
+
+           }
+
+
+       }
+
+
+
+   }
+
+
+
+   }
+
+

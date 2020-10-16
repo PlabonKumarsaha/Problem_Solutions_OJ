@@ -1,0 +1,29 @@
+#include <iostream>
+#include <stdio.h>
+#include<cmath>
+
+using namespace std;
+int main()
+{
+
+int n;
+scanf("%d",&n);
+for(int i=1;i<=n;i++)
+{
+   double ab,ac,bc;
+   double ratio=0;
+   double ad=0;
+   cin>>ab>>ac>>bc;
+   cin>>ratio;
+
+   ratio =ratio/(ratio+1);
+  ad= sqrt(ratio)*ab;
+  //printf("Case %d:%lf\n",i,ad);
+   printf("Case %d: %0.8f\n",i,ad);
+
+
+
+}
+
+    return 0;
+}
