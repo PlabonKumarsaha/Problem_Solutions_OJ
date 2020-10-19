@@ -28,8 +28,6 @@ do
 }while((total - takenTotal)>=takenTotal && (i-1>-1));
 cout<<arr.size()-i<<endl;
 
-
-
 }
 
 }
