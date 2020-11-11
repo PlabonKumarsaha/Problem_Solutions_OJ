@@ -1,0 +1,121 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package algos;
+
+import static com.sun.org.apache.xalan.internal.lib.ExsltDatetime.date;
+import static com.sun.org.apache.xalan.internal.lib.ExsltDatetime.date;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import static java.util.concurrent.ThreadLocalRandom.current;
+import java.util.regex.Pattern;
+
+/**
+ *
+ * @author PKS
+ */
+public class ALgos {
+
+   
+  static int minimumNumber2(int n, String password) {
+        // Return the minimum number of characters to make the password strong
+      boolean digits = false;
+      boolean isUppercase =false;
+      boolean isLoerCase = false;
+      boolean isDigit = false;
+      boolean isSpecialChar = false;
+        //boolean count[]= {digits,isUppercase,isLoerCase,isDigit,isSpecialChar};
+      if(password.length()>6){
+          digits =true;
+          //return 0;
+      }
+      for(int i =0;i<password.length();i++){
+          char current = password.charAt(i);
+          if(Character.isUpperCase(current)){
+              isUppercase = true;
+          }
+          if(Character.isLowerCase(current)){
+              isLoerCase = true;
+          }
+          if(Character.isDigit(current)){
+              isDigit = true;
+          } 
+          if(current == '!' ||current == '@' || current == '#' || current == '$' || current == '%' ||  current == '^' || current == '&' || current == '*' || current == '('
+          || current == ')' || current == '-' || current == '+'){
+              isSpecialChar = true;
+          }
+      }
+      int result = 6; 
+      System.out.println("start"+result);
+      if(digits = false){
+          result--;
+          System.out.println("digits"+result);
+         // return 0;
+      } else{}
+      if(isUppercase == true){
+          
+          result --;
+          System.out.println("isUppercase"+result);
+         // return 0;
+      }else{}
+      if(isLoerCase == true){
+                    
+
+          result --;
+          System.out.println("isLoerCase"+result);
+         // return 0;
+      }else{}
+      if(isDigit == true){
+  
+
+          result --;
+              System.out.println("isDigit"+result);
+         // return 0;
+      }
+      if(isSpecialChar == true){
+                            
+          result --; 
+          System.out.println("speci"+result); 
+          
+      }else{}
+      
+return result;
+    
+    }
+     static int minimumNumber(int n, String password) {
+        // Return the minimum number of characters to make the password strong
+   int cnt=4;
+Pattern upperCase = Pattern.compile("[A-Z]");
+Pattern lowerCase = Pattern.compile("[a-z]");
+Pattern digit = Pattern.compile("[0–9]");
+Pattern special =Pattern.compile("[!@#$%^&*()-+]");
+if(upperCase.matcher(password).find()){
+cnt--;
+}
+if(lowerCase.matcher(password).find()){
+cnt-- ;
+}
+if(digit.matcher(password).find()){
+cnt-- ;
+}
+if(special.matcher(password).find()){
+cnt-- ;
+}
+// Return the maximum number of characters to make the password strong
+int result = Math.max(cnt,6-n);
+return result;
+    }
+ 
+    public static void main(String[] args) {
+     // int arr[] = new int[3];
+        //String a = timeConversion("12:01:00AM");
+        int a= minimumNumber(11,"#HackerRank");
+        
+     System.out.print(a);
+        
+    }
+    
+}
