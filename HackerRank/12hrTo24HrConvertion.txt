@@ -1,0 +1,51 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package algos;
+
+import static com.sun.org.apache.xalan.internal.lib.ExsltDatetime.date;
+import static com.sun.org.apache.xalan.internal.lib.ExsltDatetime.date;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+/**
+ *
+ * @author PKS
+ */
+public class ALgos {
+
+   static String timeConversion(String s) {
+     
+    String st = "";
+    String time[] = s.split(":");
+    String hour =time[0];
+    String min = time[1];
+    String sec = time[2].substring(0,2);
+    String clock = time[2].substring(2,4);
+     if(clock.equals("AM")){
+             if(hour.equals("12")){
+                    hour="00";}
+             st = hour+":"+min+":"+sec;  
+    }else{
+            if(!hour.equals("12")){
+                 int hr = Integer.parseInt(hour); 
+                 hr = hr +12; 
+                 hour =""+hr; 
+             }
+             st = hour+":"+min+":"+sec;
+             }
+                 
+        return st;     
+     }
+ 
+    public static void main(String[] args) {
+     // int arr[] = new int[3];
+        String a = timeConversion("12:01:00AM");
+     System.out.print(a);
+        
+    }
+    
+}
