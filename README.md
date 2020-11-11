@@ -28,3 +28,5 @@ problems that i tried in online judges like codeforces,SPOJ,hackerearth
 ## hackerRank
 * 12hrTo24hrConversion
 * Counting vallys
+* desigingPDF
+* PassordPattern
