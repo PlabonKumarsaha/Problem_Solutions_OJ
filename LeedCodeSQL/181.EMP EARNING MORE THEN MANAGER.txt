@@ -7,3 +7,15 @@ WHERE
 A.ManagerId = B.Id 
 AND
 A.Salary > B.salary;
+
+# Oracle solution
+
+SELECT a.Name AS Employee
+FROM
+Employee a LEFT OUTER JOIN
+Employee b
+ON
+a.ManagerId = b.ID
+WHERE a.ManagerId IS NOT NULL AND
+a.salary > b.salary;
+
