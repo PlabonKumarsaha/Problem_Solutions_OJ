@@ -1,1 +1,6 @@
+#MY SQl
 SELECT email from Person GROUP BY email Having count(email)>1;
+
+
+# alternate solution
+SELECT DISTINCT email FROM PERSON GROUP BY EMAIL HAVING COUNT(email)>1;
