@@ -26,6 +26,7 @@ problems that i tried in online judges like codeforces,SPOJ,hackerearth
 * 196 - Delete duplication - https://github.com/PlabonKumarsaha/Problem_Solutions_OJ/blob/master/LeedCodeSQL/196Delete%20Duplicate%20Emails.txt
 * 178 - Rank Score - using ,dense_rank()
 * 620 - Not Boring Movies- desc
+* 182 - Duplicate Emails
 
 ## hackerRank
 * 12hrTo24hrConversion
