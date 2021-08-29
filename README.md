@@ -1,4 +1,4 @@
-# otherOnline-Judges
+# OtherOnline-Judges
 problems in Online judges like codeforces,Spoj,hackerearth etc
 problems that i tried in online judges like codeforces,SPOJ,hackerearth
 
@@ -27,7 +27,7 @@ problems that i tried in online judges like codeforces,SPOJ,hackerearth
 * 178 - Rank Score - using ,dense_rank()
 * 620 - Not Boring Movies- desc
 * 182 - Duplicate Emails
-* 183. Customers Who Never Order
+* 183. Customers Who Never Order - using NOT IN
 
 ## hackerRank
 * 12hrTo24hrConversion
