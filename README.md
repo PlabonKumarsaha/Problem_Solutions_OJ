@@ -15,6 +15,7 @@ problems that i tried in online judges like codeforces,SPOJ,hackerearth
 * 520 - Detect Capital(bruitForce(2m,40% daster),counting uppercase(1ms,99.55% faster))
 * 705 - Hashmap impementation
 * 121 - BestTime to buy and sell stock
+* 50  - Pow(x, n)
 
 ## LeetCode SQL
 * 595 -Big Countries - where and union operator was used..second apporach - OR operator
