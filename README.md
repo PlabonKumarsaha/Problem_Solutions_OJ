@@ -17,6 +17,7 @@ problems that i tried in online judges like codeforces,SPOJ
 * 121 - BestTime to buy and sell stock
 * 50  - Pow(x, n)
 * 94 - Binary Tree Inorder Traversal
+* 242 - Valid Anagram
 
 ## LeetCode SQL
 * 595 -Big Countries - where and union operator was used..second apporach - OR operator
