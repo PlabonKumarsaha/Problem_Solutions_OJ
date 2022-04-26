@@ -1,9 +1,11 @@
 class Solution {
    public  int missingNumber(int[] nums) {
+   //finding the sum of the linear progression using formula
         int n = nums.length;
         int sum = n*(n+1)/2;
         int comparedValue =0;
 
+//sum of existing array
         for(int i =0;i<nums.length;i++){
             comparedValue = comparedValue+ nums[i];
         }
