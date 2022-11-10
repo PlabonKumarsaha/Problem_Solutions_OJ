@@ -14,31 +14,35 @@ class Solution {
 }
 
 
+
 class Solution {
-  public static String sortString(String value) {
-   char arr [] = value.toCharArray();
-   char temp ;
-   for(int i =0 ; i< arr.length;i++){
-    for(int j = 1;j<=arr.length -1;j++){
-      if(arr[i]>arr[j]){
-        temp = arr[j];
-        arr[j] = arr[i];
-        arr[i] = temp;
+   public  char[] sortString(String value) {
+    char arr[] = value.toCharArray();
+    char temp;
+
+    int i = 0;
+    while (i < arr.length) {
+      int j = i + 1;
+      while (j < arr.length) {
+        if (arr[j] < arr[i]) {
+
+          // Comparing the characters one by one
+          temp = arr[i];
+          arr[i] = arr[j];
+          arr[j] = temp;
+        }
+        j += 1;
       }
+      i += 1;
     }
-   }
-   return new String(arr);
+    return arr;
   }
-  public static boolean isAnagram(String s, String t) {
+  public  boolean isAnagram(String s, String t) {
 
-    if(s.length() == t.length()){
+    if (s.length() == t.length()) {
+      return Arrays.equals(sortString(s), sortString(t));
 
-     if(sortString(s).equals(sortString(t))){
-       return true;
-     }else {
-       return false;
-     }
-    }else {
+    } else {
       return false;
     }
   }
